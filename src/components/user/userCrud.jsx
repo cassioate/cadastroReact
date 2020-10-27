@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Main from '../template/Main'
-import api from '../../services/api'
+// import api from '../../services/api'
 
 const headerProps = {
     icon: 'users',
