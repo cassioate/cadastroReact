@@ -8,7 +8,7 @@ const headerProps = {
     subtitle: 'Cadastro de obras: Incluir, Listar, Alterar e Excluir'
 }
 
-const baseUrl = "http://localhost:3001/obras"
+const baseUrl = "https://backreactfront.herokuapp.com/obras"
 
 
 const initialState = {

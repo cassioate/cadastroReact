@@ -8,7 +8,7 @@ const headerProps = {
     subtitle: 'Cadastro de autores: Incluir, Listar, Alterar e Excluir'
 }
 
-const baseUrl = "http://localhost:3001/autores"
+const baseUrl = "https://backreactfront.herokuapp.com/autores"
 
 
 const initialState = {
@@ -172,6 +172,7 @@ export default class AutoresCrud extends Component {
         this.setState({ autor })
     }
 
+    
     remove(autor) {
         axios.delete(`${baseUrl}/${autor.id}`).then(resp => {
             const list = this.state.list.filter(u => u !== autor)
@@ -190,7 +191,6 @@ export default class AutoresCrud extends Component {
                     <td>{autor.pais}</td>
                     <td>{autor.cpf}</td>
                     <td>{autor.obras}</td>
-
                     <td>
                         <button className="btn btn-warning"
                             onClick={() => this.load(autor)}>
