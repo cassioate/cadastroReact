@@ -2,6 +2,7 @@ import './Nav.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// eslint-disable-next-line
 export default props =>
     <aside className="menu-area">
         <nav className="menu">
