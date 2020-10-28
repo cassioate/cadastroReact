@@ -116,7 +116,7 @@ export default class ObrasCrud extends Component {
                         <div className="form-group">
                             <label>Autores</label>
                             <input type="text" className="form-control"
-                                name="Autores"
+                                name="autores"
                                 value={this.state.obras.autores}
                                 onChange={e => this.updateField(e)}
                                 placeholder="Digite o nome dos autores"
